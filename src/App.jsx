@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './home.jsx';
 import MagazinePage from './magazine.jsx';
 import VideoPage from './video.jsx';
@@ -44,7 +44,7 @@ function Clothes() {
 }
 function App() {
   return(
-     <BrowserRouter>
+     <HashRouter>
      <div id="bg"></div>
   <BackgroundMusic />
  <Routes>
@@ -57,7 +57,7 @@ function App() {
         <Route path="/clothes" element ={<Clothes/>} /> 
       </Routes>
 
- </BrowserRouter>
+ </HashRouter>
   );
 }
 
