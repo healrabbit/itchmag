@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import homevideo from '${base}/assets/homepageloop.mp4';
+import homevideo from '  /assets/homepageloop.mp4';
 import LinkDelay from './linkdelay.jsx';
-import logo from '${base}/assets/itchlogo.png'
+import logo from '  /assets/itchlogo.png'
 function HomePage() {
   const navigate = useNavigate();
   const videoRef = useRef(null);

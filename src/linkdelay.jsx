@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import clicksound from "${base}/assets/click.mp3";
+import clicksound from "  /assets/click.mp3";
 
 function DelayedLink({ to, children, delay = 200 }) {
   const navigate = useNavigate();

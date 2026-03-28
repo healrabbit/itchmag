@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from "react";
-import soundtrack from "${base}/assets/themetrack.mp3";
+import soundtrack from "  /assets/themetrack.mp3";
 
 function BackgroundMusic() {
   const audioRef = useRef(null);

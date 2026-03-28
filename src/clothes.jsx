@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
-import video11 from "${base}/assets/clothesenter.mp4";
-import video22 from "${base}/assets/clothesloop.mp4";
-import video33 from "${base}/assets/clothesexit.mp4";
-import click from "${base}/assets/click.mp3";
-import logo from '${base}/assets/itchlogo.png'
+import video11 from "  /assets/clothesenter.mp4";
+import video22 from "  /assets/clothesloop.mp4";
+import video33 from "  /assets/clothesexit.mp4";
+import click from "  /assets/click.mp3";
+import logo from '  /assets/itchlogo.png'
 
 function ClothesPage() {
   const navigate = useNavigate();
