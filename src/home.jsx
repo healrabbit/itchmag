@@ -2,7 +2,10 @@ import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import homevideo from '/assets/homepageloop.mp4';
 import LinkDelay from './linkdelay.jsx';
-import logo from '/assets/itchlogo.png'
+import flyer from '/assets/cltflyer.png';
+import logo from '/assets/itchlogo.png';
+import BuyButton from './eventbuybutton.jsx';
+
 function HomePage() {
   const navigate = useNavigate();
   const videoRef = useRef(null);
@@ -42,7 +45,8 @@ function HomePage() {
       <LinkDelay to="/clothes">
         <div id="link4"></div>
       </LinkDelay>
-<div className="content"> <img id="logo" src={logo}/> </div>
+<div className="content"> <img id="logo" src={logo}/><div id="flyer" > <img id="flyerimg" src={flyer}/> <div id="flyerbtn"><BuyButton/></div> </div> </div>
+
       <audio id="click" src="assets/click.mp3" type="audio/mpeg" />
     </div>
   );

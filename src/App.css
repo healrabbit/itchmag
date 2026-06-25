@@ -84,6 +84,13 @@ video{
   background: #ddd;
   color: black;
 }
+
+#buybtn{
+  position:fixed;
+  top:30%;
+  left: 10%;
+
+}
 #enterdiv {
   position:absolute;
   height:100vh;
@@ -147,3 +154,28 @@ a:hover{
   top:65%;
 }
 
+#flyer{
+width:25vw;
+position:fixed;
+left:72%;
+top:4%;
+}
+#flyerimg{
+  width:25vw;
+  box-shadow: -1px -1px 30px 3px rgba(210, 246, 181, 0.372);
+}
+
+#flyerbtn{
+  position:fixed;
+  left:73%
+}
+#shirt{
+  width:200px;
+}
+
+#shirtbuybtn{
+  position:fixed;
+  top:20%;
+  left: 40%;
+
+}

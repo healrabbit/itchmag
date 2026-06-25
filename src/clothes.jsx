@@ -5,8 +5,9 @@ import video11 from "/assets/clothesenter.mp4";
 import video22 from "/assets/clothesloop.mp4";
 import video33 from "/assets/clothesexit.mp4";
 import click from "/assets/click.mp3";
-import logo from '/assets/itchlogo.png'
-
+import logo from '/assets/itchlogo.png';
+import BuyButton from './shirtbuybutton.jsx';
+import shirt from '/assets/vol3shirt.png';
 function ClothesPage() {
   const navigate = useNavigate();
 
@@ -18,9 +19,7 @@ function ClothesPage() {
 
   const [activeVideo, setActiveVideo] = useState("video1");
 
-  // --------------------------
-  // VIDEO 1: intro
-  // --------------------------
+
   useEffect(() => {
     if (hasRun.current) return;
     hasRun.current = true;
@@ -56,9 +55,7 @@ video1.addEventListener("canplaythrough", () => {
     };
   }, [navigate]);
 
-  // --------------------------
-  // VIDEO 3: exit
-  // --------------------------
+
   useEffect(() => {
     if (activeVideo === "video3") {
       const video3 = video3Ref.current;
@@ -78,9 +75,7 @@ video1.addEventListener("canplaythrough", () => {
     }
   }, [activeVideo, navigate]);
 
-  // --------------------------
-  // BUTTON: switch to video3
-  // --------------------------
+
   const changeVideo = () => {
     const video1 = video1Ref.current;
     const video2 = video2Ref.current;
@@ -120,10 +115,16 @@ video1.addEventListener("canplaythrough", () => {
 
       <div className="content">
         <img id="logo" src={logo}/>
+        <div>
+          
+        </div>
         {activeVideo === "video2" && (
+          <div>
           <button id="backbtn" onClick={changeVideo}>
             BACK
           </button>
+          <div id="shirtbuybtn"> <img id="shirt" src={shirt}/> <BuyButton/></div>
+          </div>
         )}
       </div>
 
