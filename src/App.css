@@ -172,10 +172,21 @@ top:4%;
 #shirt{
   width:200px;
 }
-
+#magimg{
+  width:300px;
+}
 #shirtbuybtn{
   position:fixed;
   top:20%;
   left: 40%;
 
+}
+
+#youtube{
+  width:30vw;
+  height:30vh;
+    background-color: transparent; 
+  position:fixed;
+  top:20%;
+  left:35%;
 }

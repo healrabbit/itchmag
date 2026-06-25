@@ -7,6 +7,7 @@ import video33 from "/assets/magazineexit.mp4";
 import click from "/assets/click.mp3";
 import logo from '/assets/itchlogo.png'
 import BuyButton from "./magbuybutton.jsx"
+import magazine from '/assets/magazinezine.png'
 function MagazinePage() {
   const navigate = useNavigate();
 
@@ -122,7 +123,7 @@ video1.addEventListener("canplaythrough", () => {
         <img id="logo" src={logo}/>
        
         {activeVideo === "video2" && (
-         <div> <div id="buybtn"> <BuyButton/> </div>
+         <div> <div id="buybtn"> <img id="magimg" src={magazine}/> <BuyButton/> </div>
           <button id="backbtn" onClick={changeVideo}>
             BACK
           </button>

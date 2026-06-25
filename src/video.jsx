@@ -120,9 +120,12 @@ video1.addEventListener("canplaythrough", () => {
       <div className="content">
         <img id="logo" src={logo}/>
         {activeVideo === "video2" && (
+          <div>
           <button id="backbtn" onClick={changeVideo}>
             BACK
           </button>
+         <a href="https://www.youtube.com/@ITCHMagazine"> <div id="youtube"> </div> </a>
+          </div>
         )}
       </div>
 

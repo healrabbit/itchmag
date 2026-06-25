@@ -61,7 +61,7 @@ ui.createComponent('product', {
         },
       },
       contents: {
-        img: true,
+        img: false,
         title: true,
         price: true,
       },
