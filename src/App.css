@@ -219,6 +219,7 @@ padding-bottom:20px;
   height:20vh;
   padding-bottom:5vh;
   padding-top:5vh;
+  padding-left:5vw;
 }
 
 #vidcontainer iframe {
@@ -243,6 +244,7 @@ padding-bottom:20px;
 }
 #mfooter{
  padding-bottom:5vh;
+ 
 }
 #mfooter p{
   font-family:Helvetica, sans-serif;
