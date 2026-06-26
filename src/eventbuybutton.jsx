@@ -26,7 +26,11 @@ const ShopifyBuyButton = () => {
         });
 
       
-        const ui = ShopifyBuy.UI.init(client);
+  setTimeout(() => {
+  const ui = ShopifyBuy.UI.init(client);
+
+ 
+
         
         targetNode.innerHTML = '';
 
@@ -159,6 +163,7 @@ ui.createComponent('product', {
     },
   },
 });
+}, 0);
       } catch (err) {
         console.error("Shopify Initialization Error: ", err);
       }

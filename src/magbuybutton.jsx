@@ -38,7 +38,14 @@ ui.createComponent('product', {
   options: {
     product: {
       styles: {
+              title: {
+          'color': '#ffffff', 
+        }, 
+        price: {
+          'color': '#ffffff', 
+        },
         product: {
+          'background-color': '#ffffff00',
           '@media (min-width: 601px)': {
             'max-width': 'calc(25% - 20px)',
             'margin-left': '20px',

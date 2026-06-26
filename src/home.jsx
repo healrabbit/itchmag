@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import useIsMobile from "./mobiledesktop.jsx";
 import homevideo from '/assets/homepageloop.mp4';
 import LinkDelay from './linkdelay.jsx';
 import flyer from '/assets/cltflyer.png';
@@ -9,16 +10,18 @@ import BuyButton from './eventbuybutton.jsx';
 function HomePage() {
   const navigate = useNavigate();
   const videoRef = useRef(null);
+const isMobile = useIsMobile();
 
-  useEffect(() => {
-    const video = videoRef.current;
+useEffect(() => {
+  if (isMobile) return; 
 
-    // Try to play video
-    video.play().catch((err) => {
-      console.warn("Autoplay failed, redirecting to Enter:", err);
-      navigate("/"); // redirect to Enter page if autoplay fails
-    });
-  }, [navigate]);
+  const video = videoRef.current;
+
+  video.play().catch(() => {
+    navigate("/");
+  });
+
+}, [isMobile, navigate]);
 
   return (
     <div>
@@ -45,7 +48,9 @@ function HomePage() {
       <LinkDelay to="/clothes">
         <div id="link4"></div>
       </LinkDelay>
-<div className="content"> <img id="logo" src={logo}/><div id="flyer" > <img id="flyerimg" src={flyer}/> <div id="flyerbtn"><BuyButton/></div> </div> </div>
+<div className="content"> <img id="logo" src={logo}/><div id="flyer" > <img id="flyerimg" src={flyer}/> <div id="flyerbtn"><BuyButton/></div> </div>   
+ <div id="footer"> <p> ITCH Magazine 2026</p>
+</div></div>
 
       <audio id="click" src="assets/click.mp3" type="audio/mpeg" />
     </div>
