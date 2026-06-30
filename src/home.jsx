@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import useIsMobile from "./mobiledesktop.jsx";
 import homevideo from '/assets/homepageloop.mp4';
 import LinkDelay from './linkdelay.jsx';
-import flyer from '/assets/cltflyer.png';
+// import flyer from '/assets/cltflyer.png';
 import logo from '/assets/itchlogo.png';
 import BuyButton from './eventbuybutton.jsx';
 
@@ -48,7 +48,7 @@ useEffect(() => {
       <LinkDelay to="/clothes">
         <div id="link4"></div>
       </LinkDelay>
-<div className="content"> <img id="logo" src={logo}/><div id="flyer" > <img id="flyerimg" src={flyer}/> <div id="flyerbtn"><BuyButton/></div> </div>   
+<div className="content"> <img id="logo" src={logo}/><div id="flyer" >  </div>   
  <div id="footer"> <p> ITCH Magazine 2026</p>
 </div></div>
 

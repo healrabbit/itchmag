@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './mobilescroll.css';
-import flyer from '/assets/cltflyer.png';
+// import flyer from '/assets/cltflyer.png';
 import logo from '/assets/itchlogo.png';
 import EBuyButton from './eventbuybutton.jsx';
 import MBuyButton from './magbuybutton.jsx';
@@ -53,10 +53,7 @@ function HomePage() {
         <img id="mlogo" src={logo} alt="Logo" /> 
       </div>
       
-      <div id="mflyer"> 
-        <img id="mflyerimg" src={flyer} alt="Flyer" /> 
-        <div id="mflyerbtn"><EBuyButton/></div> 
-      </div> 
+    
 
       <div id="mflyer"> 
         <img id="mflyerimg" src={magazine} alt="Magazine" /> 
